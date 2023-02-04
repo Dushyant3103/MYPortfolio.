@@ -1,0 +1,110 @@
+             /* * {
+             padding: 0;
+             margin: 0;
+         }
+         
+         .body {
+             background: url("../bg.jpg");
+             min-height: 100vh;
+             background-size: 100vw 100vh;
+             background-repeat: no-repeat;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border: 2px solid black;
+         }
+         
+         #board {
+             background: linear-gradient(white, green);
+             width: 90vmin;
+             height: 92vmin;
+             display: grid;
+             grid-template-columns: repeat(18, 1fr);
+             grid-template-rows: repeat(18, 1fr);
+             border: 2px solid black;
+         }
+         
+         .head {
+             background-color: red;
+         }
+         
+         .snake {
+             background-color: purple;
+             border: .25vmin solid black;
+             border-radius: 12px;
+         }
+         
+         .food {
+             background: linear-gradient(red, purple);
+             border: .25vmin solid black;
+             border-radius: 8px;
+         } */
+             
+             @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+             * {
+                 padding: 0;
+                 margin: 0;
+             }
+             
+             .body {
+                 min-height: 100vh;
+                 background-size: 102vw 110vh;
+                 background-repeat: no-repeat;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             
+             #scoreBox {
+                 position: absolute;
+                 top: 9px;
+                 right: 200px;
+                 font-size: 39px;
+                 font-weight: bold;
+                 font-family: 'New Tegomin', serif;
+                 color: black;
+             }
+             
+             #hiscoreBox {
+                 position: absolute;
+                 top: 59px;
+                 right: 140px;
+                 font-size: 39px;
+                 font-weight: bold;
+                 font-family: 'New Tegomin', serif;
+                 color: black;
+             }
+             
+             #board {
+                 background: linear-gradient(green, rgb(102, 151, 102));
+                 width: 155vmin;
+                 height: 95vmin;
+                 border: 2px solid black;
+                 display: grid;
+                 grid-template-rows: repeat(18, 1fr);
+                 grid-template-columns: repeat(18, 1fr);
+                 position: absolute;
+                 left: 8px;
+                 top: 20px;
+             }
+             
+             .head {
+                 background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+                 border: 2px solid rgb(34, 4, 34);
+                 transform: scale(1.02);
+                 border-radius: 10px;
+             }
+             
+             .snake {
+                 background-color: rgb(146, 103, 146);
+                 border: .25vmin solid white;
+                 border-radius: 12px;
+             }
+             
+             .food {
+                 background: linear-gradient(black, grey);
+                 border: .25vmin solid black;
+                 border-radius: 8px;
+             }
+             
+             @media only screen and (max-width:600px)
